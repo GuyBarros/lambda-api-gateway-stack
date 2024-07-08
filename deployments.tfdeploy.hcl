@@ -8,7 +8,7 @@ identity_token "aws" {
 deployment "production" {
   variables = {
     region              = "eu-west-2"
-    role_arn            = "arn:aws:iam::958215610051:role/tfc-workload-identity-guy@hashicorp.com"
+    role_arn            = "arn:aws:iam::958215610051:role/tfc-wif-guybarros"
     identity_token_file = identity_token.aws.jwt_filename
     default_tags      = { stacks-preview-example = "lambda-api-gateway-stack" }
   }
